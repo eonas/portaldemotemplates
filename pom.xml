@@ -10,7 +10,7 @@
     <groupId>de.eonas.portal.demo</groupId>
     <artifactId>templates</artifactId>
     <packaging>jar</packaging>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
     <name>CMS - OpenCms Demo Template Module</name>
     <description>OpenCms Demo Template Module</description>
