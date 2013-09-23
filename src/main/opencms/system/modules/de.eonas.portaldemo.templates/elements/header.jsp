@@ -4,7 +4,7 @@
 <html>
 <head>
     <title><cms:info property="opencms.title"/></title>
-    <!-- cms:enable-ade/ -->
+    <cms:enable-ade/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,8 +24,8 @@
 
 
 
-    <!-- cms:headincludes type="javascript"/>
-    <!-- cms:headincludes type="css"/>
+    <cms:headincludes type="javascript"/>
+    <cms:headincludes type="css"/>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
