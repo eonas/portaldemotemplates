@@ -6,12 +6,12 @@
 
     <!-- Main body -->
     <div class="row-fluid">
-        <cms:container name="center" type="center" width="480" detailview="true"/>
+        <cms:container name="centercontainer" type="center" width="${centerwidth}" maxElements="8" detailview="true"/>
     </div>
 
     <!-- footer -->
     <div class="row">
-        <cms:container name="footer" type="center" width="480"/>
+        <cms:container name="footercontainer" type="footer" maxElements="1" width="480" />
     </div>
 
     <hr>

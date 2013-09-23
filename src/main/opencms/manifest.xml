@@ -746,8 +746,8 @@
 			<accesscontrol/>
 		</file>
 		<file>
-			<source>system/modules/de.eonas.portaldemo.templates/resources/js/vendor/jquery-1.8.3.min.js</source>
-			<destination>system/modules/de.eonas.portaldemo.templates/resources/js/vendor/jquery-1.8.3.min.js</destination>
+			<source>system/modules/de.eonas.portaldemo.templates/resources/js/vendor/jquery.complete.js</source>
+			<destination>system/modules/de.eonas.portaldemo.templates/resources/js/vendor/jquery.complete.js</destination>
 			<type>plain</type>
 			<uuidstructure>6951b4f4-569e-11e2-9980-7f078ec0cbdf</uuidstructure>
 			<uuidresource>6951b4f5-569e-11e2-9980-7f078ec0cbdf</uuidresource>
@@ -819,7 +819,7 @@
 		<file>
 			<source>system/modules/de.eonas.portaldemo.templates/templates/Einspaltig.jsp</source>
 			<destination>system/modules/de.eonas.portaldemo.templates/templates/Einspaltig.jsp</destination>
-			<type>jsp</type>
+			<type>containerpage_template</type>
 			<uuidstructure>2d728c0c-569a-11e2-9980-7f078ec0cbdf</uuidstructure>
 			<uuidresource>2d728c0d-569a-11e2-9980-7f078ec0cbdf</uuidresource>
 			<datelastmodified>Sat, 05 Jan 2013 11:43:20 GMT</datelastmodified>
@@ -830,7 +830,7 @@
 			<properties>
 				<property>
 					<name>Title</name>
-					<value><![CDATA[Single Row Layout]]></value>
+					<value><![CDATA[Bootstrap Layout]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>

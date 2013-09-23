@@ -6,7 +6,7 @@
 
 <cms:formatter var="content" val="value">
 
-    <div class="portlet box box_schema3">
+    <div class="panel panel-default">
         <!-- Portlet -->
             <%--@elvariable id="value" type="Map<String, Map<String, org.opencms.jsp.util.CmsJspContentAccessValueWrapper>>"--%>
 
@@ -19,7 +19,7 @@
                 <c:set var="PortletID">${Portlet}${ID}</c:set>
                 <portlet:portlet portletId="${PortletID}">
                     <!-- Window State Controls -->
-                    <h4>
+                    <div class="panel-heading">
                         <span style="display: inline-block;">
                             <portlet:modeDropDown styleClass=""/>
                         </span>
@@ -31,10 +31,9 @@
                                 <portlet:title/>
                             </c:otherwise>
                         </c:choose>
+                    </div>
 
-                    </h4>
-
-                    <div class="boxbody">
+                    <div class="panel-body">
                         <portlet:render/>
                     </div>
 
@@ -45,9 +44,11 @@
                 %>
             </c:when>
             <c:otherwise>
-                <h4>${Title}</h4>
 
-                <div class="boxbody">
+                <div class="panel-heading">
+                        ${Title}
+                </div>
+                <div class="panel-body">
                     unconfigured portlet
                 </div>
             </c:otherwise>

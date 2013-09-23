@@ -1,36 +1,31 @@
 <%@page buffer="none" session="false" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><cms:info property="opencms.title"/></title>
-    <cms:enable-ade/>
+    <!-- cms:enable-ade/ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="">
-
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="<cms:link>../resources/css/bootstrap.min.css</cms:link>">
-    <style>
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-    </style>
-    <link rel="stylesheet" href="<cms:link>../resources/css/bootstrap-responsive.min.css</cms:link>">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
     <link rel="stylesheet" href="<cms:link>../resources/css/main.css</cms:link>">
-    <link rel="stylesheet" href="<cms:link>../resources/css/docs.css</cms:link>">
 
-    <script src="<cms:link>../resources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js</cms:link>"></script>
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
+    <script src="<cms:link>../resources/js/vendor/jquery.complete.js</cms:link>"></script>
 
-    <cms:headincludes type="javascript"/>
-    <cms:headincludes type="css"/>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        try {
+            document.execCommand('BackgroundImageCache', false, true);
+        } catch (e) {
+        }
+    </script>
+
+
+
+    <!-- cms:headincludes type="javascript"/>
+    <!-- cms:headincludes type="css"/>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -45,13 +40,6 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".bs-docs-sidebar">
-
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
-    improve your experience.</p>
-<![endif]-->
-
+<body>
 <cms:include file="menu/nav_top.jsp"/>
 
