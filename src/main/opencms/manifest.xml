@@ -4,7 +4,7 @@
 	<info>
 		<creator>Admin</creator>
 		<opencms_version>8.5.1</opencms_version>
-		<createdate>Tue, 24 Sep 2013 09:00:22 GMT</createdate>
+		<createdate>Tue, 24 Sep 2013 15:30:39 GMT</createdate>
 		<infoproject>Offline</infoproject>
 		<export_version>7</export_version>
 	</info>
@@ -13,7 +13,7 @@
 		<nicename><![CDATA[Portal Demo Website]]></nicename>
 		<class/>
 		<description/>
-		<version>0.12</version>
+		<version>0.13</version>
 		<authorname><![CDATA[Helmut Manck]]></authorname>
 		<authoremail><![CDATA[helmut.manck@eonas.de]]></authoremail>
 		<datecreated/>
@@ -216,7 +216,7 @@
 			<type>jsp</type>
 			<uuidstructure>4f25c626-56ae-11e2-a0c2-7f078ec0cbdf</uuidstructure>
 			<uuidresource>4f25c627-56ae-11e2-a0c2-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Sat, 05 Jan 2013 11:38:11 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 15:13:03 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Fri, 04 Jan 2013 20:35:42 GMT</datecreated>
 			<usercreated>Admin</usercreated>
@@ -297,9 +297,29 @@
 			<type>jsp</type>
 			<uuidstructure>c66adf91-5727-11e2-956f-7f078ec0cbdf</uuidstructure>
 			<uuidresource>c66adf92-5727-11e2-956f-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Sat, 05 Jan 2013 11:28:04 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 15:14:49 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Sat, 05 Jan 2013 11:05:11 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/de.eonas.portaldemo.templates/elements/menu/nav_top_right.jsp</source>
+			<destination>system/modules/de.eonas.portaldemo.templates/elements/menu/nav_top_right.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>451a2ac1-2524-11e3-a039-cd0190cea54c</uuidstructure>
+			<uuidresource>451a51d2-2524-11e3-a039-cd0190cea54c</uuidresource>
+			<datelastmodified>Tue, 24 Sep 2013 15:27:28 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 24 Sep 2013 14:19:05 GMT</datecreated>
 			<usercreated>Admin</usercreated>
 			<flags>0</flags>
 			<properties>
@@ -404,7 +424,7 @@
 			<type>jsp</type>
 			<uuidstructure>af1f1b04-24f7-11e3-a039-cd0190cea54c</uuidstructure>
 			<uuidresource>af1f1b05-24f7-11e3-a039-cd0190cea54c</uuidresource>
-			<datelastmodified>Mon, 10 Sep 2012 15:02:19 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 13:07:05 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Tue, 24 Sep 2013 08:59:56 GMT</datecreated>
 			<usercreated>Admin</usercreated>
@@ -436,6 +456,39 @@
 			<usercreated>Admin</usercreated>
 			<flags>0</flags>
 			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/de.eonas.portaldemo.templates/pages</destination>
+			<type>folder</type>
+			<uuidstructure>6e36a237-2512-11e3-a039-cd0190cea54c</uuidstructure>
+			<datelastmodified>Tue, 24 Sep 2013 12:11:23 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 24 Sep 2013 12:11:23 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/de.eonas.portaldemo.templates/pages/login.jsp</source>
+			<destination>system/modules/de.eonas.portaldemo.templates/pages/login.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>7a023209-2512-11e3-a039-cd0190cea54c</uuidstructure>
+			<uuidresource>7a02320a-2512-11e3-a039-cd0190cea54c</uuidresource>
+			<datelastmodified>Tue, 24 Sep 2013 13:14:13 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 24 Sep 2013 12:11:43 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -600,20 +653,49 @@
 			<relations/>
 			<accesscontrol/>
 		</file>
-        <file>
-            <destination>system/modules/de.eonas.portaldemo.templates/resources/fonts</destination>
-            <type>folder</type>
-            <uuidstructure>08d0e162-569c-11e2-9980-7f078ec0cbdf</uuidstructure>
-            <uuidresource>08d0e163-569c-11e2-9980-7f078ec0cbdf</uuidresource>
-            <datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
-            <userlastmodified>Admin</userlastmodified>
-            <datecreated>Fri, 04 Jan 2013 18:24:53 GMT</datecreated>
-            <usercreated>Admin</usercreated>
-            <flags>0</flags>
-            <properties/>
-            <relations/>
-            <accesscontrol/>
-        </file>
+		<file>
+			<source>system/modules/de.eonas.portaldemo.templates/resources/css/bootstrap.min.css</source>
+			<destination>system/modules/de.eonas.portaldemo.templates/resources/css/bootstrap.min.css</destination>
+			<type>plain</type>
+			<uuidstructure>08c7e0ae-569c-11e2-9980-7f078ec0cbdf</uuidstructure>
+			<uuidresource>08c7e0af-569c-11e2-9980-7f078ec0cbdf</uuidresource>
+			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Fri, 04 Jan 2013 18:24:53 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/de.eonas.portaldemo.templates/resources/css/main.css</source>
+			<destination>system/modules/de.eonas.portaldemo.templates/resources/css/main.css</destination>
+			<type>plain</type>
+			<uuidstructure>693b46ba-569e-11e2-9980-7f078ec0cbdf</uuidstructure>
+			<uuidresource>693b46bb-569e-11e2-9980-7f078ec0cbdf</uuidresource>
+			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Fri, 04 Jan 2013 18:41:54 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/de.eonas.portaldemo.templates/resources/fonts</destination>
+			<type>folder</type>
+			<uuidstructure>08d0e162-569c-11e2-9980-7f078ec0cbdf</uuidstructure>
+			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Fri, 04 Jan 2013 18:24:53 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
 		<file>
 			<source>system/modules/de.eonas.portaldemo.templates/resources/fonts/glyphicons-halflings-regular.eot</source>
 			<destination>system/modules/de.eonas.portaldemo.templates/resources/fonts/glyphicons-halflings-regular.eot</destination>
@@ -668,36 +750,6 @@
 			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Fri, 04 Jan 2013 18:24:53 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/de.eonas.portaldemo.templates/resources/css/bootstrap.min.css</source>
-			<destination>system/modules/de.eonas.portaldemo.templates/resources/css/bootstrap.min.css</destination>
-			<type>plain</type>
-			<uuidstructure>08c7e0ae-569c-11e2-9980-7f078ec0cbdf</uuidstructure>
-			<uuidresource>08c7e0af-569c-11e2-9980-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Fri, 04 Jan 2013 18:24:53 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/de.eonas.portaldemo.templates/resources/css/main.css</source>
-			<destination>system/modules/de.eonas.portaldemo.templates/resources/css/main.css</destination>
-			<type>plain</type>
-			<uuidstructure>693b46ba-569e-11e2-9980-7f078ec0cbdf</uuidstructure>
-			<uuidresource>693b46bb-569e-11e2-9980-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Fri, 04 Jan 2013 18:41:54 GMT</datecreated>
 			<usercreated>Admin</usercreated>
 			<flags>0</flags>
 			<properties/>
@@ -905,7 +957,7 @@
 			<type>containerpage_template</type>
 			<uuidstructure>2d728c0c-569a-11e2-9980-7f078ec0cbdf</uuidstructure>
 			<uuidresource>2d728c0d-569a-11e2-9980-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Sat, 05 Jan 2013 11:43:20 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 15:21:56 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Fri, 04 Jan 2013 18:11:36 GMT</datecreated>
 			<usercreated>Admin</usercreated>
@@ -914,30 +966,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[Bootstrap Layout]]></value>
-				</property>
-				<property type="shared">
-					<name>export</name>
-					<value><![CDATA[false]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/de.eonas.portaldemo.templates/templates/Zweispaltig.jsp</source>
-			<destination>system/modules/de.eonas.portaldemo.templates/templates/Zweispaltig.jsp</destination>
-			<type>jsp</type>
-			<uuidstructure>4f3bbf2c-56ae-11e2-a0c2-7f078ec0cbdf</uuidstructure>
-			<uuidresource>4f3bbf2d-56ae-11e2-a0c2-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Fri, 04 Jan 2013 20:37:33 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Fri, 04 Jan 2013 20:35:42 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Fluid Row Layout]]></value>
 				</property>
 				<property type="shared">
 					<name>export</name>
