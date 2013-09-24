@@ -4,7 +4,7 @@
 	<info>
 		<creator>Admin</creator>
 		<opencms_version>8.5.1</opencms_version>
-		<createdate>Tue, 24 Sep 2013 15:30:39 GMT</createdate>
+		<createdate>Tue, 24 Sep 2013 18:53:33 GMT</createdate>
 		<infoproject>Offline</infoproject>
 		<export_version>7</export_version>
 	</info>
@@ -13,7 +13,7 @@
 		<nicename><![CDATA[Portal Demo Website]]></nicename>
 		<class/>
 		<description/>
-		<version>0.13</version>
+		<version>0.14</version>
 		<authorname><![CDATA[Helmut Manck]]></authorname>
 		<authoremail><![CDATA[helmut.manck@eonas.de]]></authoremail>
 		<datecreated/>
@@ -317,7 +317,7 @@
 			<type>jsp</type>
 			<uuidstructure>451a2ac1-2524-11e3-a039-cd0190cea54c</uuidstructure>
 			<uuidresource>451a51d2-2524-11e3-a039-cd0190cea54c</uuidresource>
-			<datelastmodified>Tue, 24 Sep 2013 15:27:28 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 16:26:13 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Tue, 24 Sep 2013 14:19:05 GMT</datecreated>
 			<usercreated>Admin</usercreated>
@@ -496,12 +496,17 @@
 			<destination>system/modules/de.eonas.portaldemo.templates/resources</destination>
 			<type>folder</type>
 			<uuidstructure>02ad4188-5699-11e2-9980-7f078ec0cbdf</uuidstructure>
-			<datelastmodified>Fri, 04 Jan 2013 18:03:14 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 16:22:39 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Fri, 04 Jan 2013 18:03:14 GMT</datecreated>
 			<usercreated>Admin</usercreated>
 			<flags>0</flags>
-			<properties/>
+			<properties>
+				<property>
+					<name>export</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
 			<relations/>
 			<accesscontrol/>
 		</file>
@@ -674,7 +679,7 @@
 			<type>plain</type>
 			<uuidstructure>693b46ba-569e-11e2-9980-7f078ec0cbdf</uuidstructure>
 			<uuidresource>693b46bb-569e-11e2-9980-7f078ec0cbdf</uuidresource>
-			<datelastmodified>Fri, 04 Jan 2013 13:30:32 GMT</datelastmodified>
+			<datelastmodified>Tue, 24 Sep 2013 16:00:59 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
 			<datecreated>Fri, 04 Jan 2013 18:41:54 GMT</datecreated>
 			<usercreated>Admin</usercreated>
