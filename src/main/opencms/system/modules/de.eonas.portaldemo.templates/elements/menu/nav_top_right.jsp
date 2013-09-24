@@ -55,6 +55,11 @@
                 </c:if>
             </c:set>
 
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
