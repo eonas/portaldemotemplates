@@ -1,8 +1,24 @@
+body { padding-top: 70px; padding-bottom: 20px; }
+p:last-child { margin-bottom: 0; }
+hr { width: 90%; }
 
+.input-group + .panel { margin-top: 1em; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.list-group-item { padding: 5px 15px; }
+#activitieslist > .list-group-item { padding: 10px 15px; }
+
+#leftcol > * { margin-bottom: 20px; }
+
+#activitieslist > li { overflow: hidden; }
+
+.activities_meta { margin: 0.3em 0 0; }
+.activities_meta a { margin-left: 0.5em; }
+.activities_meta .panel { margin: 0.7em 0 0; }
+
+.smallcomments { margin-top: 0.3px; }
+.smallcomments .panel-heading { padding: 0.2em 1.6em; }
+.smallcomments ul { margin-bottom: 0; }
+.smallcomments li { padding: 3px 5px; }
 
 #leftcol > * { margin-bottom: 20px; }
 
@@ -36,19 +52,4 @@ body {
         padding: 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

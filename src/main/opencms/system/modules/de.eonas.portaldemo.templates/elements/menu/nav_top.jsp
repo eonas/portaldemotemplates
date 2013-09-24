@@ -55,11 +55,8 @@
                 </c:forEach>
                 <c:if test="${not empty nav.items}"></li></c:if>
                 </ul>
-                <form class="navbar-form navbar-right">
-                    <input type="text" placeholder="Email" class="form-control">
-                    <input type="password" placeholder="Password" class="form-control">
-                    <button type="submit" class="btn">Sign in</button>
-                </form>
+
+                <cms:include file="nav_top_right.jsp"/>
             </div>
         </div>
     </div>

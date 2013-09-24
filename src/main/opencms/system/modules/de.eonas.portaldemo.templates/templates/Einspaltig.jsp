@@ -54,10 +54,6 @@
 
     <hr>
 
-    <footer>
-        <p>&copy; eonas IT-Beratung und -Entwicklungs GmbH 2012</p>
-    </footer>
-
 </div>
 
 <cms:include file="../elements/footer.jsp"/>

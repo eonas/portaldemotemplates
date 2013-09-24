@@ -47,6 +47,12 @@
             <version>2.1</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.opencms</groupId>
+            <artifactId>opencms-core</artifactId>
+            <version>8.5.1</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 	<scm>
