@@ -6,43 +6,38 @@
 <fmt:setLocale value="${cms.locale}"/>
 <fmt:bundle basename="com.alkacon.opencms.v8.login.messages">
 
-    <jsp:useBean id="login" class="org.opencms.jsp.CmsJspLoginBean" scope="page">
+    <jsp:useBean id="login" class="org.opencms.jsp.CmsJspLoginBean" scope="request"/>
+    <%
+        login.init(pageContext, request, response);
+    %>
+    <c:set var="loginou">${cms.element.settings.loginou}</c:set>
+    <c:if test="${param.action eq 'login' && !empty param.name && !empty param.password}">
+        <c:choose>
+            <c:when test="${not empty cms.element.settings.loginou}">
+                <% login.login("/" + (String) pageContext.getAttribute("loginou") + "/" + request.getParameter("name"), request.getParameter("password"), "Offline", request.getParameter("requestedResource")); %>
+            </c:when>
+            <c:otherwise>
+                <% login.login(request.getParameter("name"), request.getParameter("password"), "Online", request.getParameter("requestedResource")); %>
+            </c:otherwise>
+        </c:choose>
+    </c:if>
+    <c:if test="${param.action eq 'logoff'}">
         <%
-            login.init(pageContext, request, response);
+            login.logout();
         %>
-        <c:set var="loginou">${cms.element.settings.loginou}</c:set>
-        <c:if test="${param.action eq 'login' && !empty param.name && !empty param.password}">
-            <c:choose>
-                <c:when test="${not empty cms.element.settings.loginou}">
-                    <% login.login("/" + (String) pageContext.getAttribute("loginou") + "/" + request.getParameter("name"), request.getParameter("password"), "Offline", request.getParameter("requestedResource")); %>
-                </c:when>
-                <c:otherwise>
-                    <% login.login(request.getParameter("name"), request.getParameter("password"), "Offline", request.getParameter("requestedResource")); %>
-                </c:otherwise>
-            </c:choose>
-        </c:if>
-        <c:if test="${param.action eq 'logoff'}">
-            <%
-                login.logout();
-            %>
-        </c:if>
-    </jsp:useBean>
+    </c:if>
+
 
     <c:choose>
         <c:when test="${!login.loggedIn}">
+
             <form method="get" action="<cms:link>${cms.requestContext.uri}</cms:link>" class="navbar-form navbar-right">
-                <c:if test="${!login.loginSuccess}">
-                    <div class="login-errormessage">
-                        <fmt:message key="login.message.failed"/>:<br/>
-                            ${login.loginException.localizedMessage}
-                    </div>
-                </c:if>
 
                 <input name="name" type="text" placeholder="Email" class="form-control">
                 <input name="password" type="password" placeholder="Password" class="form-control">
-                <button type="submit" class="btn">Sign in</button>
                 <input type="hidden" name="action" value="login"/>
                 <input type="hidden" name="requestedResource" value="${param.requestedResource}"/>
+                <button type="submit" class="btn">Sign in</button>
             </form>
         </c:when>
         <c:otherwise>
@@ -65,12 +60,12 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">${displayname}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="<cms:link>/Homes/${username}/Messages.html</cms:link>">Messages</a></li>
-                        <li><a href="<cms:link>/Homes/${username}/Subscriptions.html</cms:link>">Subscriptions</a></li>
-                        <li><a href="<cms:link>/Homes/${username}/Friends.html</cms:link>">Friends</a></li>
+                        <li><a href="<cms:link>/admin/messages.html</cms:link>">Messages</a></li>
+                        <li><a href="<cms:link>/admin/subscriptions.html</cms:link>">Subscriptions</a></li>
+                        <li><a href="<cms:link>/admin/friends.html</cms:link>">Friends</a></li>
                         <li class="divider"></li>
-                        <li><a href="<cms:link>/Homes/${username}/Profile.html</cms:link>">User Profile</a></li>
-                        <li><a href="<cms:link>/Homes/${username}/Preferences.html</cms:link>">Preferences</a></li>
+                        <li><a href="<cms:link>/homes/${username}/profile.html</cms:link>">User Profile</a></li>
+                        <li><a href="<cms:link>/admin/preferences.html</cms:link>">Preferences</a></li>
                         <li class="divider"></li>
                         <li><a href="<cms:link>${cms.requestContext.uri}</cms:link>?action=logoff">Logout</a></li>
                     </ul>
@@ -83,14 +78,15 @@
                     </a>
                 </li>
                 <li>
-                    <c:set var="now" value="<%=new java.util.Date()%>" />
-                    <p class="navbar-text"> <fmt:formatDate type="time"
-                                                            timeStyle="short"
-                                                            value="${now}" /></p>
+                    <c:set var="now" value="<%=new java.util.Date()%>"/>
+                    <p class="navbar-text"><fmt:formatDate type="time"
+                                                           timeStyle="short"
+                                                           value="${now}"/></p>
                 </li>
             </ul>
 
         </c:otherwise>
     </c:choose>
 
-</fmt:bundle> 
+
+</fmt:bundle>

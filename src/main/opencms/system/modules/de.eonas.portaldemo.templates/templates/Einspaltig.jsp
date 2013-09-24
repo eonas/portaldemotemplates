@@ -23,6 +23,17 @@
 </c:choose>
 
 <div class="container">
+
+    <%--@elvariable id="login" type="org.opencms.jsp.CmsJspLoginBean"--%>
+    <c:if test="${!login.loggedIn && !login.loginSuccess}">
+        <div class="alert alert-danger alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <fmt:message key="login.message.failed"/>:<br/>
+                ${login.loginException.localizedMessage}
+        </div>
+    </c:if>
+
+
     <div class="row">
         <c:if test="${cols == '3' || cols == '2'}">
 
