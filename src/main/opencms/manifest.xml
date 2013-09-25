@@ -4,7 +4,7 @@
 	<info>
 		<creator>Admin</creator>
 		<opencms_version>8.5.1</opencms_version>
-		<createdate>Tue, 24 Sep 2013 18:53:33 GMT</createdate>
+		<createdate>Wed, 25 Sep 2013 18:58:44 GMT</createdate>
 		<infoproject>Offline</infoproject>
 		<export_version>7</export_version>
 	</info>
@@ -13,7 +13,7 @@
 		<nicename><![CDATA[Portal Demo Website]]></nicename>
 		<class/>
 		<description/>
-		<version>0.14</version>
+		<version>0.15</version>
 		<authorname><![CDATA[Helmut Manck]]></authorname>
 		<authoremail><![CDATA[helmut.manck@eonas.de]]></authoremail>
 		<datecreated/>
@@ -484,6 +484,30 @@
 			<usercreated>Admin</usercreated>
 			<flags>0</flags>
 			<properties>
+				<property type="shared">
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/de.eonas.portaldemo.templates/pages/searchResult.jsp</source>
+			<destination>system/modules/de.eonas.portaldemo.templates/pages/searchResult.jsp</destination>
+			<type>jsp</type>
+			<uuidstructure>4113fab2-260f-11e3-b83a-cd0190cea54c</uuidstructure>
+			<uuidresource>4113fab3-260f-11e3-b83a-cd0190cea54c</uuidresource>
+			<datelastmodified>Wed, 25 Sep 2013 18:57:39 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 25 Sep 2013 18:21:10 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Formatter for detail view]]></value>
+				</property>
 				<property type="shared">
 					<name>export</name>
 					<value><![CDATA[false]]></value>
