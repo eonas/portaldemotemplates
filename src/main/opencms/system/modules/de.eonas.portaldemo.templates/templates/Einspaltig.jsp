@@ -1,6 +1,7 @@
 <%@page buffer="none" session="false" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <cms:include file="../elements/header.jsp"/>
 
 <c:set var="cols"><cms:property name="style.columns" file="search" default="3"/></c:set>
