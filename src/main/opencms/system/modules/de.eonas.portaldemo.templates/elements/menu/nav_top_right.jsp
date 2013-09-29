@@ -84,12 +84,10 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">${displayname}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="<cms:link>/admin/messages.html</cms:link>">Messages</a></li>
-                        <li><a href="<cms:link>/admin/subscriptions.html</cms:link>">Subscriptions</a></li>
-                        <li><a href="<cms:link>/admin/friends.html</cms:link>">Friends</a></li>
+                        <li><a href="<cms:link>/home/${username}/index.html</cms:link>">Dashboard</a></li>
                         <li class="divider"></li>
-                        <li><a href="<cms:link>/homes/${username}/profile.html</cms:link>">User Profile</a></li>
-                        <li><a href="<cms:link>/admin/preferences.html</cms:link>">Preferences</a></li>
+                        <li><a href="<cms:link>/home/${username}/profile.html</cms:link>">User Profile</a></li>
+                        <li><a href="">Preferences</a></li>
                         <li class="divider"></li>
                         <li><a href="<cms:link>${cms.requestContext.uri}</cms:link>?action=logoff">Logout</a></li>
                     </ul>
