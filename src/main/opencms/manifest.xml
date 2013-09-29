@@ -399,6 +399,26 @@
             <accesscontrol/>
         </file>
         <file>
+            <source>system/modules/de.eonas.portaldemo.templates/formatters/Portlet/detailBorderless.jsp</source>
+            <destination>system/modules/de.eonas.portaldemo.templates/formatters/Portlet/detailBorderless.jsp</destination>
+            <type>jsp</type>
+            <uuidstructure>2ddce6c1-569a-11e2-9980-7f178ec0cbdf</uuidstructure>
+            <uuidresource>2ddce6c2-569a-11e2-9980-7f178ec0cbdf</uuidresource>
+            <datelastmodified>Fri, 04 Jan 2013 12:42:48 GMT</datelastmodified>
+            <userlastmodified>Admin</userlastmodified>
+            <datecreated>Fri, 04 Jan 2013 18:11:36 GMT</datecreated>
+            <usercreated>Admin</usercreated>
+            <flags>0</flags>
+            <properties>
+                <property type="shared">
+                    <name>export</name>
+                    <value><![CDATA[false]]></value>
+                </property>
+            </properties>
+            <relations/>
+            <accesscontrol/>
+        </file>
+        <file>
             <destination>system/modules/de.eonas.portaldemo.templates/formatters/Textblock</destination>
             <type>folder</type>
             <uuidstructure>af09be3d-24f7-11e3-a039-cd0190cea54c</uuidstructure>
