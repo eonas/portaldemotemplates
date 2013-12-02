@@ -1,4 +1,4 @@
-<%@page buffer="none" session="false" %>
+<%@page buffer="none" session="false" trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="cms" uri="http://www.opencms.org/taglib/cms" %>
 <%@ taglib prefix="portlet" uri="http://eonas.de/portaltaglib" %>
@@ -6,7 +6,8 @@
 
 <cms:formatter var="content" val="value">
 
-    <div class="panel panel-default">
+
+    <div class="<c:if test="${cms.container.type == 'content-wide'}">row </c:if>margin-bottom-30">
         <!-- Portlet -->
             <%--@elvariable id="value" type="Map<String, Map<String, org.opencms.jsp.util.CmsJspContentAccessValueWrapper>>"--%>
 
@@ -19,22 +20,25 @@
                 <c:set var="PortletID">${Portlet}${ID}</c:set>
                 <portlet:portlet portletId="${PortletID}">
                     <!-- Window State Controls -->
-                    <div class="panel-heading">
-                        <span style="display: inline-block;">
+                    <div class="headline">
+                        <span style="display: inline-block; float: right;">
                             <portlet:modeDropDown styleClass=""/>
                         </span>
+
                         <c:choose>
                             <c:when test="${fn:length(Title) > 0}">
-                                ${Title}
+                                <h3 ${paragraph.rdfa.Title}>${Title}</h3>
                             </c:when>
                             <c:otherwise>
-                                <portlet:title/>
+                                <h3><portlet:title/></h3>
                             </c:otherwise>
                         </c:choose>
                     </div>
 
-                    <div class="panel-body">
-                        <portlet:render/>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <portlet:render/>
+                        </div>
                     </div>
 
                 </portlet:portlet>

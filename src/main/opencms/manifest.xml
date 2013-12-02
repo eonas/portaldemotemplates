@@ -19,9 +19,6 @@
         <datecreated/>
         <userinstalled/>
         <dateinstalled/>
-        <dependencies>
-            <dependency name="com.alkacon.opencms.v8.template3" version="0"/>
-        </dependencies>
         <exportpoints>
             <exportpoint uri="/system/modules/de.eonas.portaldemo.templates/classes/" destination="WEB-INF/classes/"/>
             <exportpoint uri="/system/modules/de.eonas.portaldemo.templates/lib/" destination="WEB-INF/lib/"/>
@@ -35,24 +32,11 @@
                 <param name="schema">/system/modules/de.eonas.portaldemo.templates/schemas/portlets.xsd</param>
             </type>
         </resourcetypes>
-        <resourcetypes>
-            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="v8portaltextblock" id="256">
-                <param name="schema">/system/modules/de.eonas.portaldemo.templates/schemas/textblock.xsd</param>
-            </type>
-        </resourcetypes>
         <explorertypes>
             <explorertype name="v8portlet" key="fileicon.v8portlet" icon="v8textblock.png" bigicon="v8textblock.png"
                           reference="xmlcontent">
                 <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=v8portlet"
                              order="140" autosetnavigation="false" autosettitle="false" info="desc.v8portlet"/>
-                <accesscontrol>
-                    <accessentry principal="ROLE.WORKPLACE_USER" permissions="+r+v+w+c"/>
-                </accesscontrol>
-            </explorertype>
-            <explorertype name="v8portaltextblock" key="fileicon.v8textblock" icon="v8textblock.png"
-                          bigicon="v8textblock_big.png" reference="xmlcontent">
-                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=v8portaltextblock"
-                             order="110" autosetnavigation="false" autosettitle="false" info="desc.v8textblock"/>
                 <accesscontrol>
                     <accessentry principal="ROLE.WORKPLACE_USER" permissions="+r+v+w+c"/>
                 </accesscontrol>
@@ -1026,21 +1010,6 @@
             <type>plain</type>
             <uuidstructure>2d85c5f3-569a-11e2-9980-7f078ec0cbdf</uuidstructure>
             <uuidresource>2d85c5f4-569a-11e2-9980-7f078ec0cbdf</uuidresource>
-            <datelastmodified>Fri, 04 Jan 2013 12:42:48 GMT</datelastmodified>
-            <userlastmodified>Admin</userlastmodified>
-            <datecreated>Fri, 04 Jan 2013 18:11:36 GMT</datecreated>
-            <usercreated>Admin</usercreated>
-            <flags>0</flags>
-            <properties/>
-            <relations/>
-            <accesscontrol/>
-        </file>
-        <file>
-            <source>system/modules/de.eonas.portaldemo.templates/schemas/textblock.xsd</source>
-            <destination>system/modules/de.eonas.portaldemo.templates/schemas/textblock.xsd</destination>
-            <type>plain</type>
-            <uuidstructure>2d85c5f3-569a-11e2-9980-7f078ec3cbdf</uuidstructure>
-            <uuidresource>2d85c5f4-569a-11e2-9980-7f078ec3cbdf</uuidresource>
             <datelastmodified>Fri, 04 Jan 2013 12:42:48 GMT</datelastmodified>
             <userlastmodified>Admin</userlastmodified>
             <datecreated>Fri, 04 Jan 2013 18:11:36 GMT</datecreated>
